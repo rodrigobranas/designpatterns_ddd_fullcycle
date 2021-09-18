@@ -1,4 +1,4 @@
-import Command from "./Command";
+import Command from "../../application/command/Command";
 
 export default interface Observer {
     operation: string;

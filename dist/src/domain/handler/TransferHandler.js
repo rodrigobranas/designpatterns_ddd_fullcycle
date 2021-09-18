@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const TransferService_1 = __importDefault(require("./TransferService"));
+const TransferService_1 = __importDefault(require("../service/TransferService"));
 class TransferHandler {
     constructor(accountRepository) {
         this.accountRepository = accountRepository;

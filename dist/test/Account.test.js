@@ -3,12 +3,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const AccountApplicationService_1 = __importDefault(require("./AccountApplicationService"));
-const AccountRepositoryMemory_1 = __importDefault(require("./AccountRepositoryMemory"));
-const CreditHandler_1 = __importDefault(require("./CreditHandler"));
-const DebitHandler_1 = __importDefault(require("./DebitHandler"));
-const Publisher_1 = __importDefault(require("./Publisher"));
-const TransferHandler_1 = __importDefault(require("./TransferHandler"));
+const AccountApplicationService_1 = __importDefault(require("../src/application/service/AccountApplicationService"));
+const AccountRepositoryMemory_1 = __importDefault(require("../src/infra/repository/AccountRepositoryMemory"));
+const CreditHandler_1 = __importDefault(require("../src/domain/handler/CreditHandler"));
+const DebitHandler_1 = __importDefault(require("../src/domain/handler/DebitHandler"));
+const Publisher_1 = __importDefault(require("../src/infra/queue/Publisher"));
+const TransferHandler_1 = __importDefault(require("../src/domain/handler/TransferHandler"));
 let service;
 beforeEach(function () {
     const publisher = new Publisher_1.default();

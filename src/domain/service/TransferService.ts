@@ -1,4 +1,4 @@
-import Account from "./Account";
+import Account from "../entity/Account";
 
 export default class TransferService {
 

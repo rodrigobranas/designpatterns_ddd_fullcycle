@@ -1,4 +1,4 @@
-import Command from "./Command";
+import Command from "../../application/command/Command";
 import Observer from "./Observer";
 
 export default class Publisher {

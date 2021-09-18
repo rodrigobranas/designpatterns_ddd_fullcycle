@@ -3,10 +3,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const AccountBuilder_1 = __importDefault(require("./AccountBuilder"));
-const CreditCommand_1 = __importDefault(require("./CreditCommand"));
-const DebitCommand_1 = __importDefault(require("./DebitCommand"));
-const TransferCommand_1 = __importDefault(require("./TransferCommand"));
+const AccountBuilder_1 = __importDefault(require("../../domain/builder/AccountBuilder"));
+const CreditCommand_1 = __importDefault(require("../command/CreditCommand"));
+const DebitCommand_1 = __importDefault(require("../command/DebitCommand"));
+const TransferCommand_1 = __importDefault(require("../command/TransferCommand"));
 class AccountApplicationService {
     constructor(publisher, accountRepository) {
         this.publisher = publisher;

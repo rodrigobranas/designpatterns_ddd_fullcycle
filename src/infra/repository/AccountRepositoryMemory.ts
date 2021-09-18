@@ -1,5 +1,5 @@
-import Account from "./Account";
-import AccountRepository from "./AccountRepository";
+import Account from "../../domain/entity/Account";
+import AccountRepository from "../../domain/repository/AccountRepository";
 
 export default class AccountRepositoryMemory implements AccountRepository {
     accounts: Account[];

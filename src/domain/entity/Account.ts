@@ -1,4 +1,4 @@
-import AccountBuilder from "./AccountBuilder";
+import AccountBuilder from "../builder/AccountBuilder";
 import Transaction from "./Transaction";
 
 export default class Account {

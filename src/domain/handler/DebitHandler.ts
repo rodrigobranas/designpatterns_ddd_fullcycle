@@ -1,6 +1,6 @@
-import AccountRepository from "./AccountRepository";
-import DebitCommand from "./DebitCommand";
-import Observer from "./Observer";
+import AccountRepository from "../repository/AccountRepository";
+import DebitCommand from "../../application/command/DebitCommand";
+import Observer from "../../infra/queue/Observer";
 
 export default class DebitHandler implements Observer {
     operation = "debit";
